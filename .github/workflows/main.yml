@@ -1,12 +1,12 @@
-name: linting, testing, building
+name: CI
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-    push:
-      branches: [ master ]
-    pull_request:
-      branches: [ master ]  
+push:
+branches: [ master, develop ]
+pull_request:
+branches: [ master, develop ]
 jobs:
-  piepline:
+pipeline:
 runs-on: ${{ matrix.os }}
 strategy:
 matrix:
@@ -20,14 +20,12 @@ uses: actions/setup-node@v1
 with:
 node-version: ${{ matrix.node-version }}
 - name: install modules
-  run: npm install
+run: npm ci
 - name: build production project
-  run: npm run build:prod
-- name: linting typesctipy
-  run: npm run lint:ts
+run: npm run build:prod
+- name: linting typescript
+run: npm run lint:ts
 - name: linting css
-  run: npm run lint:scss
+run: npm run lint:scss
 - name: unit testing
-  run: npm run test:unit
-
- 
+run: npm run test:unit
