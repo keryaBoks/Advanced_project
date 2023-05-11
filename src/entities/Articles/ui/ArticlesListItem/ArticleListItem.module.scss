@@ -1,0 +1,126 @@
+.SMALL{
+  width: 220px;
+  background-color: var(--card-color-small);
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 10px;
+
+  transition: transform .2s;
+
+
+  &:hover{
+    transform: scale(1.1);
+    .createdAt{
+        display: block;
+    }
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+.imageWrapper{
+    position: relative;
+    width: 200px;
+    height: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: transform .2s;
+    
+}
+
+.createdAt{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+
+}
+
+
+.footer{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.infoWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.views{
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.type p{
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title p{
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topInfo{
+    display: flex;
+}
+}
+
+.BIG{
+    background-color: var(--card-color);
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    .data{
+        margin-left: auto;
+    
+    }
+
+    .topInfo{
+        display: flex;
+    }
+
+    .username{
+        margin-left: 7px;
+    }
+
+    .textBlock {
+        max-height: 200px;
+        overflow-y: hidden;
+    }
+
+    .img{
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+    }
+    .view{
+        margin-left: auto;
+        margin-right: 8px;
+    }
+
+    .footerBig{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    // .footer{
+    //     display: flex;
+    //     background: var(--bg-color);
+    // }
+}

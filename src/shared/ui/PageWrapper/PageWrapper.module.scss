@@ -1,0 +1,7 @@
+.textWrapper{
+    flex-grow: 1;
+    padding: 20px 20px 20px 45px;
+    height: calc(100vh - 50px); // высота навбара
+    overflow-y: auto;
+    flex-shrink: 100;
+}

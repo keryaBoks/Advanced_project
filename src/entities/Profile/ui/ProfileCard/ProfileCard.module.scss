@@ -1,0 +1,31 @@
+.profileCard{
+    padding: 20px;
+    border: 2px solid var(--inverted-bg-color);
+}
+
+.btn{
+    margin-left: auto;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.data{
+    margin-top: 30px;
+}
+
+.input{
+    margin-top: 10px;
+}
+
+.editing{
+    border: 2px solid var(--inverted-primary-color);
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}

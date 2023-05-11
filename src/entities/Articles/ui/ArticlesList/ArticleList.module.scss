@@ -1,0 +1,9 @@
+.BIG {
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+.SMALL {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

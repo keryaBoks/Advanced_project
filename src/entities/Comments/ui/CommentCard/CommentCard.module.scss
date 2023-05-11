@@ -1,0 +1,19 @@
+.wrapper{
+    margin-top: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 8px;
+}
+
+.text{
+    margin-top: 10px;
+}
